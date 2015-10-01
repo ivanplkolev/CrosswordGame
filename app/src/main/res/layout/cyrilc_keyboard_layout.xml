@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/custom_keyboard"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_ya"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Я" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_v"
+            android:onClick="cyrilicTouch"
+            android:text="@string/В" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_e"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Е" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_r"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Р" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_t"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Т" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_er_goliam"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Ъ" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_u"
+            android:onClick="cyrilicTouch"
+            android:text="@string/У" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_i"
+            android:onClick="cyrilicTouch"
+            android:text="@string/И" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_o"
+            android:onClick="cyrilicTouch"
+            android:text="@string/О" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_p"
+            android:onClick="cyrilicTouch"
+            android:text="@string/П" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_a"
+            android:onClick="cyrilicTouch"
+            android:text="@string/А" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_s"
+            android:onClick="cyrilicTouch"
+            android:text="@string/С" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_d"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Д" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_f"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Ф" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_g"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Г" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_h"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Х" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_i_kratko"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Й" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_k"
+            android:onClick="cyrilicTouch"
+            android:text="@string/К" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_l"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Л" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_iu"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Ю" />
+    </LinearLayout>
+
+
+
+    <!--// 3rd line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_z"
+            android:onClick="cyrilicTouch"
+            android:text="@string/З" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_er_malak"
+            android:onClick="cyrilicTouch"
+            android:text="@string/ь" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_c"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Ц" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_j"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Ж" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_b"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Б" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_n"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Н" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_m"
+            android:onClick="cyrilicTouch"
+            android:text="@string/М" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_ch"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Ч" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_sh"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Ш" />
+        <Button
+            style="@style/CyrilicKeys"
+            android:id="@+id/Cyrilic_sht"
+            android:onClick="cyrilicTouch"
+            android:text="@string/Щ" />
+    </LinearLayout>
+
+</LinearLayout>

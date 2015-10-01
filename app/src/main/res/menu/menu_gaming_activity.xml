@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CrossWordMain">
+
+    <item
+        android:id="@+id/action_change_fragment"
+        android:title="@string/change_fragment"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_verify"
+        android:title="@string/action_verify"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_clear"
+        android:title="@string/action_clear"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom"
+        />
+
+    <!--<item android:id="@+id/action_settings"-->
+        <!--android:title="@string/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="never" />-->
+</menu>
