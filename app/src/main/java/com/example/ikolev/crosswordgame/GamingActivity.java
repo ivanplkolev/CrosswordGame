@@ -3,9 +3,11 @@ package com.example.ikolev.crosswordgame;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -42,6 +44,9 @@ public class GamingActivity extends AppCompatActivity {
         setBoxes();
         initialisePaging();
         showKeyboard();
+
+
+
     }
 
     private void setBoxes() {
@@ -66,11 +71,14 @@ public class GamingActivity extends AppCompatActivity {
     }
 
     private void initialisePaging() {
-        List<Fragment> fragments = new Vector<Fragment>();
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toobar);
+        setSupportActionBar(toolbar);
+        List<Fragment> fragments = new Vector<>();
         fragments.add(Fragment.instantiate(this, StandartViewFragment.class.getName()));
         fragments.add(Fragment.instantiate(this, ListViewFragment.class.getName()));
-        pagerAdapter = new PagerAdapter(this.getSupportFragmentManager(), fragments);
-         pager = (ViewPager) findViewById(R.id.viewpager);
+        pagerAdapter = new PagerAdapter(this.getSupportFragmentManager(), fragments, this);
+        pager = (ViewPager) findViewById(R.id.viewpager);
         pager.setPageTransformer(true, new ZoomOutPageTransformer());
         pager.setAdapter(pagerAdapter);
         pager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
@@ -80,6 +88,8 @@ public class GamingActivity extends AppCompatActivity {
                 invalidateOptionsMenu();
             }
         });
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
+        tabLayout.setupWithViewPager(pager);
     }
 
     public void Verify() {
